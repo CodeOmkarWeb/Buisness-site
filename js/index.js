@@ -12,9 +12,29 @@ function toggle_nav(){
     }
 }
 
+
+// Testonimal Login & Variables
+
+// Testonimal container
 let testonimals_container = document.querySelector('.testonimals')
+
+// Testonimal-1
 let t_1 = document.getElementById("t-1")
+let t_1_para = document.getElementById("t_1_id")
+let t_1_name = document.getElementById("t_1_name")
+let t_1_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus qui numquam ea! Accusamus obcaecati, at dolor soluta debitis reiciendis iusto tempora consequuntur quibusdam. Thanks`
+let t_1_c_name = `STEVE HARRINGTON`
+t_1_para.innerText=t_1_text
+t_1_name.innerText=t_1_c_name
+
+// Testonimal-2
 let t_2 = document.getElementById("t-2")
+let t_2_para = document.getElementById("t_2_id")
+let t_2_name = document.getElementById("t_2_name")
+let t_2_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus qui numquam ea! Accusamus obcaecati, at dolor soluta debitis reiciendis iusto tempora consequuntur quibusdam. Thankyou`
+let t_2_c_name = `JOYCE BYERS`
+t_2_para.innerText=t_2_text
+t_2_name.innerText=t_2_c_name
 let backward_t_btn =  document.querySelectorAll('.back_t')
 let forward_t_btn =  document.querySelectorAll('.forw_t')
 let is_t_1 = true 
@@ -40,6 +60,7 @@ Array.from(backward_t_btn).forEach((e)=>{
         }
 })
 })
+
 
 
 

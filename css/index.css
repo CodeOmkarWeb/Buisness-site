@@ -26,6 +26,21 @@ hr {
     margin: 1rem 0;
 }
 
+h1 {
+    font-family: system-ui;
+}
+
+h2 {
+    font-family: system-ui;
+}
+
+h3 {
+    font-family: system-ui;
+}
+
+h4 {
+    font-family: system-ui;
+}
 
 /* ============================================== */
 
@@ -158,8 +173,6 @@ hr {
     width: 25rem;
     margin-left: 2.2rem;
     box-sizing: border-box;
-    box-shadow: 6px 5px 0px #3a84a0;
-    border-radius: 3px;
 }
 
 
@@ -230,7 +243,6 @@ hr {
 .homepage_section-3 .cards .card .card-para {
     font-family: Quicksand;
     font-weight: bolder;
-    font: size 1.3rem;
     margin: 0.4rem 0.1rem;
     line-height: 2rem;
     text-align: center;
@@ -430,6 +442,221 @@ hr {
 
 
 
+/* ============================================== */
+
+/* CONTACT-PAGE*/
+
+
+
+/* Contact-Section-1 */
+
+.contact_section-1 {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contact_section-1 h2 {
+    font-family: system-ui;
+    font-size: 2rem;
+    font-weight: bolder;
+    word-spacing: 1px;
+    letter-spacing: -0.1px;
+}
+
+.contact_section-1 h3 {
+    font-family: system-ui;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    word-spacing: 1px;
+    letter-spacing: -0.1px;
+}
+
+.contact_section-1 p {
+    font-family: Quicksand;
+    font: size 1.3rem;
+    margin: 0.4rem 0;
+    line-height: 2rem;
+    font-size: 14px;
+    color: black;
+}
+
+.contact_section-1 form {
+    width: 100%;
+    /* border:3px solid; */
+    max-width: 40rem;
+
+}
+
+
+.contact_section-1 form textarea,
+.contact_section-1 form input {
+    margin: 0.5rem 0;
+    padding: 0.4rem 0.3rem;
+    background: transparent;
+    border: 0.1px solid #b7b4b4ab;
+    border-radius: 2px;
+    max-width: 100%;
+    min-width: 100%;
+    font-family: quicksand;
+    font-weight: 900;
+    transition: 0.2s all;
+    outline: 3px solid transparent;
+
+}
+
+.contact_section-1 form textarea:focus,
+.contact_section-1 form input:focus {
+    outline: 2px solid #928da5a6;
+    border: 0.1px solid #807f7fce;
+
+}
+
+
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.contact_section-1 label {
+    font-family: Cabin;
+    /* font-weight: bolder; */
+    color: #595959;
+    font-size: 0.9rem;
+    display: block;
+
+}
+
+.contact_section-1 .sub-btn {
+    width: 82px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* font-weight: 600; */
+    transition: 0.2s all;
+    font-family: Cabin;
+}
+
+.contact_section-1 .sub-btn:hover {
+    box-sizing: border-box;
+    background-color: rgb(183, 183, 183);
+}
+
+/* Footer */
+
+footer {
+    background-color: #eaeced;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: rgb(102, 98, 98);
+    font-family: system-ui;
+
+}
+
+footer h3 {
+    color: rgb(94 93 93);
+}
+
+footer hr {
+    margin: 1rem;
+    opacity: 0.3;
+}
+
+.l_r_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.left_footer {
+    margin-right: 0.2rem;
+}
+
+.right_footer {
+    text-align: right;
+}
+
+.right_footer img {
+    transition: all 0.2s;
+    filter: invert(0.4);
+    margin: 1px;
+}
+
+.right_footer img:hover {
+    filter: invert(0);
+
+}
+
+.content_footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 28vh;
+
+}
+
+.content_footer p {
+    font-size: 0.875rem;
+}
+
+.content_footer ul li {
+    list-style: none;
+}
+
+.f_items {
+    margin: 1rem;
+}
+
+
+
+.f_about {
+    width: 20%;
+}
+
+
+.f_link {
+    min-width: 10%;
+}
+
+.f_con_ser .f_link {
+    margin-right: 1.5rem;
+}
+
+.f_con_ser .f_contact {
+    margin-left: 1.5rem;
+}
+
+.f_con_ser {
+    display: flex;
+    align-items: center;
+    min-width: 40%;
+    justify-content: space-evenly;
+
+}
+
+.f_contact {
+    min-width: 20%;
+}
+
+.f_services {
+    min-width: 20%;
+}
+footer .f_copyright_line{
+    color: rgb(159, 159, 159);
+    font-size: 13px;
+    padding-left: 10px;
+    border-left: 1px solid silver;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 /* ============================================== */
 
@@ -541,9 +768,9 @@ hr {
     }
 
     .homepage_section-2 .content p {
-        font-size: 0.8rem;
+        font-size: 13px;
         text-align: center;
-        line-height: 1.8rem;
+        padding: 0rem 1rem;
     }
 
     .homepage_section-2 .content h1 {
@@ -552,7 +779,7 @@ hr {
 
     .homepage_section-2 .content {
         margin: 0.3rem;
-        ;
+        margin-bottom: 3.4rem;
     }
 
     .homepage_section-2 .content .primary-btn {
@@ -620,6 +847,99 @@ hr {
 
     .homepage_section-4 .content .testonimal p {
         font-size: 0.9rem;
+    }
+
+    .contact_section-1 h2 {
+        font-size: 1.05rem;
+    }
+
+    .contact_section-1 p {
+        line-height: 1.2rem;
+        font-size: 9px;
+    }
+
+    .contact_section-1 h3 {
+        font-size: 1rem;
+    }
+
+    .contact_section-1 label {
+        font-size: 0.8rem;
+    }
+
+    .contact_section-1 form textarea, .contact_section-1 form input {
+        font-size: 10px;
+    }
+
+    .l_r_footer {
+        font-size: 13px;
+
+    }
+
+    .right_footer img {
+        width: 1.3rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 18px;
+        ;
+    }
+
+    .content_footer {
+        justify-content: left;
+    }
+
+    footer {
+        font-size: 11px;
+        ;
+        padding: 5px;
+
+    }
+
+    footer h3 {
+        font-size: 15px;
+        ;
+    }
+
+    .footer hr {
+        margin: 5px;
+    }
+
+    .f_con_ser {
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .f_link {
+        margin: 1rem 0rem;
+    }
+
+    .f_about {
+        min-width: 85%;
+        max-width: 85%;
+        margin: auto;
+    }
+
+
+
+    .f_con_ser .f_link {
+        margin-right: 2rem;
+    }
+
+    .f_con_ser .f_contact {
+        margin-left: 2rem;
+    }
+
+    .homepage_section-4 .content .info_pr .name {
+        margin-left: 5px;
+        font-size: 0.6rem;
+    }
+
+    .homepage_section-4 .content .info_pr .light-work {
+        margin-left: 5px;
+        font-size: 0.6rem;
+    }
+    footer hr {
+        margin: 5px;
     }
 }
 
@@ -690,7 +1010,26 @@ hr {
         min-width: 25rem;
         padding: 1rem 3rem;
     }
+
+    .contact_section-1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .f_about {
+        min-width: 85%;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .f_con_ser {
+        /* width: 100%; */
+        justify-content: center;
+
+    }
+
+    
 }
+
 
 /* LAPTOP WIDE SCREEN */
 @media only screen and (min-width:900px) {
@@ -723,69 +1062,34 @@ hr {
 
 }
 
+/* Special REsponsiveness */
+@media only screen and (min-width:0px) and (max-width: 420px) {
+    .f_con_ser {
+        justify-content: flex-start;
+        max-width: 85%;
 
+        min-width: 85%;
+    }
 
-/* ============================================== */
+    .f_services {
+        min-width: 85%;
+        max-width: 85%;
+        margin: auto;
+    }
 
-/* CONTACT-PAGE*/
+    .homepage_section-2 .img-container img {
+        width: 15rem;
+        margin-left: 2.2rem;
+        box-sizing: border-box;
+    }
 
-
-
-/* Contact-Section-1 */
-
-.contact_section-1 {
-    padding:2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact_section-1 .contact_img-container{
-    margin:0 2rem;
-}
-
-.contact_section-1 form input, .contact_section-1 form textarea {
-    margin: 0.5rem 0;
-    padding: 0.6rem;
-    border-radius: 5px;
-    background: #d1d5db;
-    border: none;
-    width: 20rem;
-}
-.contact_section-1 label{
-    font-family: 'Josefin Sans';
-    font-weight: bolder;
-    color:#454040;
-    font-size: 1.2rem;
-    display:block;
-
+    .homepage_section-2 .content h1 {
+        font-size: 2.2rem;
+    }
 }
 
-.contact_section-1 .sub-btn {
-    padding: 0.5rem;
-    margin-bottom: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    border: none;
-    background: none;
-    border: 0.1px solid black;
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-    display:block;
-}
-
-.contact_section-1 .sub-btn:hover {
-    /* Dont forget to add transform in it to make it smooth */
-    /* [ blackWhite Combo ] If the font color is white then the backround should be black */
-    transition: all 0.3s;
-    border-radius: 0.3rem;
-    color: white;
-    background-color: black;
-}
-
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    margin-top: 3rem;
+@media only screen and (min-width:0px) and (max-width: 320px) {
+    .homepage_section-4 .content .testonimal p {
+        font-size: 0.8rem;
+    }
 }
