@@ -71,7 +71,7 @@ h4 {
 
 .section-1 .navbar #ul_container li:first-child {
     font-weight: 90;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 1.3rem;
 
 }
@@ -280,6 +280,15 @@ h4 {
     font-weight: bolder;
     word-spacing: 1px;
     letter-spacing: -0.1px;
+
+    color: #050a3d;
+
+}
+
+.homepage_section-4 .btn_t_n {
+    background-color: none;
+    outline: none;
+    border: none;
 }
 
 .homepage_section-4 .content .testonimals {
@@ -546,10 +555,40 @@ textarea:focus, input:focus {
     background-color: rgb(183, 183, 183);
 }
 
+/* ============================================== */
+
+/* ABOUT-PAGE*/
+.about_section-1 {
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+.about_section-1 h2::after {
+    content: '';
+    margin: 10px 0;
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 55px;
+    background-color: #050A3D;
+}
+
+.about_section-1 p {
+    margin-top: 0.4rem;
+    font-family: Hubballi;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 1rem 0rem;
+
+}
+
+
+
 /* Footer */
 
 footer {
     background-color: #eaeced;
+
     margin-top: 3rem;
     padding: 1rem;
     color: rgb(102, 98, 98);
@@ -559,6 +598,8 @@ footer {
 
 footer h3 {
     color: rgb(94 93 93);
+    color: #050a3de9;
+
 }
 
 footer hr {
@@ -575,6 +616,7 @@ footer hr {
 }
 
 .left_footer {
+    color: #050a3d;
     margin-right: 0.2rem;
 }
 
@@ -649,7 +691,8 @@ footer hr {
 .f_services {
     min-width: 20%;
 }
-footer .f_copyright_line{
+
+footer .f_copyright_line {
     color: rgb(159, 159, 159);
     font-size: 13px;
     padding-left: 10px;
@@ -657,6 +700,7 @@ footer .f_copyright_line{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 
 /* ============================================== */
 
@@ -706,7 +750,7 @@ footer .f_copyright_line{
 
     .company-name-mobile {
         list-style: none;
-        font-family: Josefin Sans;
+        font-family: Cabin;
         font-size: 1.3rem;
         position: absolute;
         top: 28px;
@@ -810,6 +854,14 @@ footer .f_copyright_line{
 
     .homepage_section-3 .cards {
         margin-bottom: 2rem;
+    }
+
+    .homepage_section-3 .cards .card {
+        width: 180px;
+    }
+
+    .homepage_section-3 .cards .card .card-para {
+        line-height: 1.5rem;
     }
 
     .homepage_section-2 {
@@ -938,9 +990,12 @@ footer .f_copyright_line{
         margin-left: 5px;
         font-size: 0.6rem;
     }
+
     footer hr {
         margin: 5px;
     }
+
+
 }
 
 
@@ -1027,7 +1082,7 @@ footer .f_copyright_line{
 
     }
 
-    
+
 }
 
 
@@ -1092,4 +1147,12 @@ footer .f_copyright_line{
     .homepage_section-4 .content .testonimal p {
         font-size: 0.8rem;
     }
+}
+
+
+
+
+/* Utility classes */
+.bold_text{
+    font-weight: bold;
 }

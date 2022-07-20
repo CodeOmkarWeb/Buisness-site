@@ -13,12 +13,22 @@ function toggle_nav(){
 }
 
 
+
+// Company Name
+const c_name="WebD"
+let company_name_mobile = document.querySelector('.company-name-mobile')
+let company_name = document.querySelector('.company-name')
+company_name_mobile.innerText=c_name;
+company_name.innerText=c_name;
+
+
 // Testonimal Login & Variables
 
 // Testonimal container
 let testonimals_container = document.querySelector('.testonimals')
 
 // Testonimal-1
+try {
 let t_1 = document.getElementById("t-1")
 let t_1_para = document.getElementById("t_1_id")
 let t_1_name = document.getElementById("t_1_name")
@@ -35,9 +45,14 @@ let t_2_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus 
 let t_2_c_name = `JOYCE BYERS`
 t_2_para.innerText=t_2_text
 t_2_name.innerText=t_2_c_name
+}
+catch(err){
+
+}
 let backward_t_btn =  document.querySelectorAll('.back_t')
 let forward_t_btn =  document.querySelectorAll('.forw_t')
 let is_t_1 = true 
+
 
 
 Array.from(forward_t_btn).forEach((e)=>{
@@ -62,7 +77,29 @@ Array.from(backward_t_btn).forEach((e)=>{
 })
 
 
-
+// Logic for form submit
+try{
+let fetchBtn = document.querySelector('.sub-btn');
+fetchBtn.addEventListener('click', form_submit)
+}catch{
+    
+}
+function form_submit() {
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open("POST","http://dummy.restapiexample.com/api/v1/create",true)
+    ourRequest.getResponseHeader('Content-type', 'application/json');
+    
+    
+    ourRequest.onprogress = function(){
+        console.log("In progress")
+    }
+    ourRequest.onload  = function(){
+        console.log(this.responseText)
+    }
+    params =  {"name":"Omkar","age":"3"}
+    ourRequest.send(params)
+    // ourRequest.send()
+}
 
 
 
