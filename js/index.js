@@ -62,6 +62,7 @@ let forward_t_btn =  document.querySelectorAll('.forw_t')
 let is_t_1 = true 
 
 
+let value_pm=(33.33/100)*(testonimals_container.scrollWidth)
 setInterval(() => {
     value_pm=(33.33/100)*(testonimals_container.scrollWidth)
 }, 1000);
