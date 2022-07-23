@@ -23,7 +23,6 @@ company_name.innerText=c_name;
 
 
 // Testonimal Login & Variables
-
 // Testonimal container
 let testonimals_container = document.querySelector('.testonimals')
 
@@ -45,37 +44,61 @@ let t_2_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus 
 let t_2_c_name = `JOYCE BYERS`
 t_2_para.innerText=t_2_text
 t_2_name.innerText=t_2_c_name
+
+let t_3 = document.getElementById("t-3")
+let t_3_para = document.getElementById("t_3_id")
+let t_3_name = document.getElementById("t_3_name")
+let t_3_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus qui numquam ea! Accusamus obcaecati, at dolor soluta debitis reiciendis iusto tempora consequuntur quibusdam. Thankyou`
+let t_3_c_name = `Natki BYERS`
+t_3_para.innerText=t_3_text
+t_3_name.innerText=t_3_c_name
 }
 catch(err){
 
 }
+
 let backward_t_btn =  document.querySelectorAll('.back_t')
 let forward_t_btn =  document.querySelectorAll('.forw_t')
 let is_t_1 = true 
 
 
+setInterval(() => {
+    value_pm=(33.33/100)*(testonimals_container.scrollWidth)
+}, 1000);
 
 Array.from(forward_t_btn).forEach((e)=>{
 
     e.addEventListener('click',()=>{
-        if(is_t_1==true){
-        testonimals_container.scrollLeft+=1000
-        is_t_1=false;
-        }
+        // if(is_t_1==true){
+        // testonimals_container.scrollLeft+=1000
+        // testonimals_container.scrollLeft+=1000
+        // is_t_1=false;
+        // }
+        testonimals_container.scrollLeft+=value_pm
 })
 
 })
 
 Array.from(backward_t_btn).forEach((e)=>{
 
+    
     e.addEventListener('click',()=>{
-        if(is_t_1==false){
-        testonimals_container.scrollLeft-=1000
-        is_t_1=true
-        }
-})
+        // if(is_t_1==false){
+        // testonimals_container.scrollLeft-=1000
+        // is_t_1=true
+        // }
+
+            testonimals_container.scrollLeft-=value_pm
+        })
+
+    
+    
+
 })
 
+// Footer dynamic 
+let f_n_c = document.querySelector(".f_n_c")
+f_n_c.innerText="Omkar.com"
 
 // Logic for form submit
 try{
@@ -84,9 +107,10 @@ fetchBtn.addEventListener('click', form_submit)
 }catch{
     
 }
+
 function form_submit() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open("POST","http://dummy.restapiexample.com/api/v1/create",true)
+    ourRequest.open("POST","http://localhost:3000/users",true)
     ourRequest.getResponseHeader('Content-type', 'application/json');
     
     
@@ -96,11 +120,10 @@ function form_submit() {
     ourRequest.onload  = function(){
         console.log(this.responseText)
     }
-    params =  {"name":"Omkar","age":"3"}
+    let params =  {"name":"Omkar","age":"3"}
     ourRequest.send(params)
     // ourRequest.send()
 }
-
 
 
 
