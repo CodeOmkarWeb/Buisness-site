@@ -49,7 +49,7 @@ let t_3 = document.getElementById("t-3")
 let t_3_para = document.getElementById("t_3_id")
 let t_3_name = document.getElementById("t_3_name")
 let t_3_text = `Lorem ipsum dolor sit amet consectetu adipisicing elit. Ducimus qui numquam ea! Accusamus obcaecati, at dolor soluta debitis reiciendis iusto tempora consequuntur quibusdam. Thankyou`
-let t_3_c_name = `Natki BYERS`
+let t_3_c_name = `Lisa Schneider`
 t_3_para.innerText=t_3_text
 t_3_name.innerText=t_3_c_name
 }
